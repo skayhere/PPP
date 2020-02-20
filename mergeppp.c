@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-//#include <time.h>
+#include <time.h>
 #include <sys/time.h>
 #define CHUNK_TH 10000 
 //performs the bottom up combine operation
@@ -64,7 +64,7 @@ int main()
 	printf("Enter number of elements to sort : ");
 	scanf("%d",&len);
 	int arr[len];// = {0};
-	printf("Enter %d elements : ",len);
+	printf("Enter %d elements : \n",len);
 	for(int i=0; i<len; i++)
 		scanf("%d",&arr[i]);
 	omp_set_num_threads(4);
